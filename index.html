@@ -17,9 +17,9 @@
     <header class="l-header">
         <!-- Top Navbar -->
 
-        <nav >
-            <a href="index.html">Design System</a>
-            <div id="topbar" class="topbar">
+        <nav class="l-header__nav">
+            <h1 href="index.html">Design System</h1>
+            <div id="topbar" class="topbar is-show">
                 <a href="about-me.html">About Me</a>
 
                 <!-- Demo Site Link Placeholder -->
@@ -28,8 +28,8 @@
             </div>
         </nav>
         <!-- Hamburger mobile menu -->
-        <i class="fa fa-bars is-show" id="hamburger" aria-hidden="true" onclick="toggleMenuClick()"></i>
-        <i class="fa fa-times " id="close" aria-hidden="true" onclick="toggleMenuClick()"></i>
+        <i class="fa fa-bars " id="hamburger" aria-hidden="true" onclick="toggleMenuClick()"></i>
+        <i class="fa fa-times is-show" id="close" aria-hidden="true" onclick="toggleMenuClick()"></i>
     </header>
     <main>
 
@@ -38,8 +38,7 @@
         <aside class="sidebar">
 
 
-            <nav id="sidebar" class="l-sidebar__nav">
-                <h2 class="c-sidebar__title">Design System</h2>
+            <nav id="sidebar" class="l-sidebar__nav is-show">
                 <ul class="c-sidebar__list">
                     <li class="c-sidebar__list--item">Branding
                         <ul class="c-sidebar__sublist">
