@@ -1,8 +1,23 @@
 :root {
-    --clr-primary: black;
-    --clr-secondary: darkgrey;
-    --clr-accent: darkgrey;
+  /*Primary colour*/
+    --clr-primary-100: #000000;
+    --clr-primary-200: #374FAE; 
+    --clr-primary-300: #7F2D8F;
+
+    /* Secondary colour*/
+
+    --clr-secondary-100: darkgrey;
+    --clr-secondary-200: #c2b4cf;
+    --clr-secondary-300: #bad1cb;
+
+  /* Secondary colour*/
+
+  --clr-accent-100: darkgrey;
+  --clr-accent-200: #494813;
+  --clr-accent-300:  #F5F39E;
+
     --clr-light: #f0f0f0;
+    --clr-black: #000000;
     --clr-white: white;
   }
 
