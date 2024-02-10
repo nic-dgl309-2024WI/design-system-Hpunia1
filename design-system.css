@@ -27,13 +27,13 @@
 
 /* accent colour*/
 
-.u-accent__green--light {
+.u-accent__gold--light {
   color: var(--clr-accent-100);
 }
-.u-accent__green--light {
+.u-accent__gold--dark {
   color: var(--clr-accent-200);
 }
-.u-accent__green--light {
+.u-accent__gold--med {
   color: var(--clr-accent-300);
 }
 
