@@ -1,14 +1,14 @@
 /*Utility classes*/
 
 /* Primary Colors */
-.u-color__primary--light {
+.u-text__primary--light {
   color: var(--clr-primary-100);
 }
 
-.u-color__primary--mid {
+.u-text__primary--mid {
   color: var(--clr-primary-200);
 }
-.u-color__primary--dark {
+.u-text__primary--dark {
   color: var(--clr-primary-300);
 }
 
