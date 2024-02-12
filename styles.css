@@ -21,6 +21,11 @@
     --clr-white: white;
   }
 
+
+  /* Font families */
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
+
   /* CSS Reset*/
 
   *, *::before, *::after {
