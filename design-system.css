@@ -1,39 +1,39 @@
 /*Utility classes*/
 
 /* Primary Colors */
-.u-text__primary--light {
+.u-text--light {
   color: var(--clr-primary-100);
 }
 
-.u-text__primary--mid {
+.u-text--mid {
   color: var(--clr-primary-200);
 }
-.u-text__primary--dark {
+.u-text--dark {
   color: var(--clr-primary-300);
 }
 
 /* Secondary colour*/
 
-.u-bg__secondary--light {
+.u-bg--light {
   background-color: var(--clr-secondary-100);
 }
 
-.u-bg__secondary--mid {
+.u-bg--mid {
   background-color: var(--clr-secondary-200);
 }
-.u-bg__secondary--dark {
+.u-bg--dark {
   background-color: var(--clr-secondary-300);
 }
 
 /* accent colour*/
 
-.u-accent__gold--light {
+.u-accent--light {
   color: var(--clr-accent-100);
 }
-.u-accent__gold--dark {
+.u-accent--dark {
   color: var(--clr-accent-200);
 }
-.u-accent__gold--med {
+.u-accent--med {
   color: var(--clr-accent-300);
 }
 
@@ -56,7 +56,7 @@
   display: none !important;
 }
 
-.l-header {
+.header {
   display: flex;
   justify-content: space-between;
 }
