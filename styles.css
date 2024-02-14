@@ -19,8 +19,63 @@
     --clr-light: #f0f0f0;
     --clr-black: #000000;
     --clr-white: white;
-  }
+  
 
+    /* Font families */
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
+
+    
+    /* Font Sizes */
+    --font-size-body: 1rem; 
+  --font-size-h1: 2.25rem; 
+  --font-size-h2: 1.875rem; 
+  --font-size-h3: 1.5rem; 
+  --font-size-h4: 1.25rem; 
+  --font-size-h5: 1.125rem; 
+  --font-size-h6: 1rem; 
+  
+    /* Font Weights */
+    --font-weight-body: 400;
+    --font-weight-heading: 700;
+  
+    /* Line Heights */
+    --line-height-body: 1.5;
+    --line-height-heading: 1.2;
+  
+    /* Letter Spacing */
+    --letter-spacing-body: 0.5px;
+  
+  
+  /* Utility Classes */
+  .font-body {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-body);
+    letter-spacing: var(--letter-spacing-body);
+    color: #333333; /* Type Colour */
+  }
+  
+  .font-heading {
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-heading);
+    line-height: var(--line-height-heading);
+    
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 14px; }
+  }
+  
+  /* Specific heading sizes */
+  .h1 { font-size: var(--font-size-h1); }
+  .h2 { font-size: var(--font-size-h2); }
+  .h3 { font-size: var(--font-size-h3); }
+  .h4 { font-size: var(--font-size-h4); }
+  .h5 { font-size: var(--font-size-h5); }
+  .h6 { font-size: var(--font-size-h6); }
+  
 
   /* Font families */
   font-family: 'Poppins', sans-serif;
@@ -50,3 +105,4 @@
     padding: 0;
     list-style: none;
   }
+}
