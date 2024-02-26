@@ -48,6 +48,76 @@
   
   
   /* Utility Classes */
+
+
+/* Primary Colors */
+.u-text--light {
+  color: var(--clr-primary-100);
+}
+
+.u-text--mid {
+  color: var(--clr-primary-200);
+}
+.u-text--dark {
+  color: var(--clr-primary-300);
+}
+
+/* Secondary colour*/
+
+.u-bg--light {
+  background-color: var(--clr-secondary-100);
+}
+
+.u-bg--mid {
+  background-color: var(--clr-secondary-200);
+}
+.u-bg--dark {
+  background-color: var(--clr-secondary-300);
+}
+
+/* accent colour*/
+
+.u-accent--light {
+  color: var(--clr-accent-100);
+}
+.u-accent--dark {
+  color: var(--clr-accent-200);
+}
+.u-accent--med {
+  color: var(--clr-accent-300);
+}
+
+
+/* Other Colors */
+
+.u-dark {
+  color: var(--clr-dark);
+}
+
+.u-white {
+  color: var(--clr-white);
+}
+
+.u-light{
+  color: var(--clr-light);
+}
+
+.is-show {
+  display: none !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
   .font-body {
     font-family: var(--font-family-body);
     font-size: var(--font-size-body);
