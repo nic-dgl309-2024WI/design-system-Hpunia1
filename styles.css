@@ -1,55 +1,58 @@
 :root {
   /*Primary colour*/
-    --clr-primary-100: #333231;
-    --clr-primary-200: #282826; 
-    --clr-primary-300: #192028;
+  --clr-primary-100: #333231;
+  --clr-primary-200: #282826;
+  --clr-primary-300: #192028;
 
-    /* Secondary colour*/
+  /* Secondary colour*/
 
-    --clr-secondary-100: #AEF4E9;
-    --clr-secondary-200: #43EAD1;
-    --clr-secondary-300: #18DCBF;
+  --clr-secondary-100: #3c773a;
+  --clr-secondary-200: #edb575;
+  --clr-secondary-300: #ef7c52;
 
   /* accent colour*/
 
-  --clr-accent-100: #9CBA87;
+  --clr-accent-100: #9cba87;
   --clr-accent-200: #BFD4B5;
-  --clr-accent-300:  #D3E2CA;
+  --clr-accent-300: #D3E2CA;
 
-    --clr-light: #f0f0f0;
-    --clr-black: #000000;
-    --clr-white: white;
-  
+  --clr-light: #f0f0f0;
+  --clr-black: #000000;
+  --clr-white: white;
 
-    /* Font families */
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Lato', sans-serif;
 
-    
-    /* Font Sizes */
-    --font-size-body: 1rem; 
-  --font-size-h1: 2.25rem; 
-  --font-size-h2: 1.875rem; 
-  --font-size-h3: 1.5rem; 
-  --font-size-h4: 1.25rem; 
-  --font-size-h5: 1.125rem; 
-  --font-size-h6: 1rem; 
-  
-    /* Font Weights */
-    --font-weight-body: 400;
-    --font-weight-heading: 700;
-  
-    /* Line Heights */
-    --line-height-body: 1.5;
-    --line-height-heading: 1.2;
-  
-    /* Letter Spacing */
-    --letter-spacing-body: 0.5px;
-  
-  
+  /* Font families */
+  --font-family-heading: 'Roboto Slab', serif;
+  --font-family-body: 'Open Sans', sans-serif;
+
+
+  /* Font Sizes */
+  --font-size-body: 1rem;
+  --font-size-h1: 2.25rem;
+  --font-size-h2: 1.875rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+  --font-size-h5: 1.125rem;
+  --font-size-h6: 1rem;
+
+  /* Font Weights */
+  --font-weight-body: 400;
+  --font-weight-heading: 700;
+
+  /* Line Heights */
+  --line-height-body: 1.5;
+  --line-height-heading: 1.2;
+
+  /* Letter Spacing */
+  --letter-spacing-body: 0.5px;
+
+
   /* Utility Classes */
 
 }
+
+
+
 /* Primary Colors */
 .u-text--light {
   color: var(--clr-primary-100);
@@ -58,6 +61,7 @@
 .u-text--mid {
   color: var(--clr-primary-200);
 }
+
 .u-text--dark {
   color: var(--clr-primary-300);
 }
@@ -71,6 +75,7 @@
 .u-bg--mid {
   background-color: var(--clr-secondary-200);
 }
+
 .u-bg--dark {
   background-color: var(--clr-secondary-300);
 }
@@ -80,9 +85,11 @@
 .u-accent--light {
   color: var(--clr-accent-100);
 }
+
 .u-accent--dark {
   color: var(--clr-accent-200);
 }
+
 .u-accent--med {
   color: var(--clr-accent-300);
 }
@@ -98,7 +105,7 @@
   color: var(--clr-white);
 }
 
-.u-light{
+.u-light {
   color: var(--clr-light);
 }
 
@@ -118,60 +125,81 @@
 
 
 
-  .font-body {
-    font-family: var(--font-family-body);
-    font-size: var(--font-size-body);
-    font-weight: var(--font-weight-body);
-    line-height: var(--line-height-body);
-    letter-spacing: var(--letter-spacing-body);
-    color: #333333; /* Type Colour */
-  }
-  
-  .font-heading {
-    font-family: var(--font-family-heading);
-    font-weight: var(--font-weight-heading);
-    line-height: var(--line-height-heading);
-    
-  }
-  @media (min-width: 768px) {
-    html {
-      font-size: 14px; }
-  }
-  
-  /* Specific heading sizes */
-  .h1 { font-size: var(--font-size-h1); }
-  .h2 { font-size: var(--font-size-h2); }
-  .h3 { font-size: var(--font-size-h3); }
-  .h4 { font-size: var(--font-size-h4); }
-  .h5 { font-size: var(--font-size-h5); }
-  .h6 { font-size: var(--font-size-h6); }
-  
+.font-body {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-body);
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-body);
+  color: #333333;
+  /* Type Colour */
+}
 
-  /* Font families */
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Lato', sans-serif;
+.font-heading {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-heading);
 
-  /* CSS Reset*/
+}
 
-  *, *::before, *::after {
-    box-sizing: border-box;
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
   }
-  body, 
-  h1, 
-  h2, 
-  h3, 
-  h4, 
-  h5, 
-  h6, 
-  p, 
-  figure, 
-  picture {
-    margin: 0;
-  }
+}
 
-  /* Remove padding*/
-  ul, ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+/* Specific heading sizes */
+.h1 {
+  font-size: var(--font-size-h1);
+}
+
+.h2 {
+  font-size: var(--font-size-h2);
+}
+
+.h3 {
+  font-size: var(--font-size-h3);
+}
+
+.h4 {
+  font-size: var(--font-size-h4);
+}
+
+.h5 {
+  font-size: var(--font-size-h5);
+}
+
+.h6 {
+  font-size: var(--font-size-h6);
+}
+
+
+
+/* CSS Reset*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* Remove padding*/
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

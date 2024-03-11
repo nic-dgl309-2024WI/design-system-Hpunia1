@@ -25,6 +25,28 @@ a:hover {
   color: #ff0000;
 }
 
+.typography-table {
+  width: 100%;
+  border: 2px solid;
+  margin-top: 20px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 2px solid #171717; /* Light grey border for separation */
+}
+
+th {
+  background-color: #f8f8f8; /* Light grey background for header */
+}
+
+/* Zebra striping for rows */
+tr{
+  background-color: #9cba87;
+}
+
 
 
 }
