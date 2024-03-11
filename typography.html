@@ -88,99 +88,114 @@
                 </ul>
             </nav>
         </aside>
+        <!-- Typography secton-->
 
-        <!--Typography section-->   
-        <h2 class="u-capitalize u-font-size__700">Utility classes </h2>
-        <table class="c-typography__table u-accent-bg__blue--light">
-            <tr>
-                <th class="u-text--light">Elements</th>
-                <th class="u-text--light">Utility classes</th>
-            </tr>
-            <tr>
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    H1
+        <section class="typography">
+            <h2 class="typography__title typography__title--level2">font-families</h2>
+            <h3 class="typography__title typography__title--level3">Roboto Slab</h3>
+          
+            <table class="typography__table typography__table--accent-green">
+              <tr>
+                <th class="typography__heading">Utility class name</th>
+                <th class="typography__heading">Capital letters</th>
+                <th class="typography__heading">Small letters</th>
+                <th class="typography__heading">Numbers</th>
+              </tr>
+              <tr>
+                <td class="typography__text typography__text--dark typography__font--roboto-slab">
+                  .typography__font--roboto-slab
                 </td>
+                <td class="typography__text typography__text--dark typography__font--roboto-slab">
+                  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                </td>
+                <td class="typography__text typography__text--dark typography__font--roboto-slab">
+                  a b c d e f g h i j k l m n o p q r s t u v w x y z
+                </td>
+                <td class="typography__text typography__text--dark typography__font--roboto-slab">
+                  1 2 3 4 5 6 7 8 9 0
+                </td>
+              </tr>
+            </table>
+          
+            <h3 class="typography__title typography__title--level3">Open Sans</h3>
+            <table class="typography__table typography__table--accent-green">
+              <tr>
+                <th class="typography__heading">Utility class name</th>
+                <th class="typography__heading">Capital letters</th>
+                <th class="typography__heading">Small letters</th>
+                <th class="typography__heading">Numbers</th>
+              </tr>
+              <tr>
+                <td class="typography__text typography__text--dark typography__font--open-sans">
+                  .typography__font--open-sans
+                </td>
+                <td class="typography__text typography__text--dark typography__font--open-sans">
+                  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                </td>
+                <td class="typography__text typography__text--dark typography__font--open-sans">
+                  a b c d e f g h i j k l m n o p q r s t u v w x y z
+                </td>
+                <td class="typography__text typography__text--dark typography__font--open-sans">
+                  1 2 3 4 5 6 7 8 9 0
+                </td>
+              </tr>
+            </table>
+          
+            <!-- Font uses -->
+            <h2 class="typography__title typography__title--level2">Font uses</h2>
+            <table class="typography__table typography__table--bg-secondary">
+              <tr>
+                <th class="typography__heading">Font</th>
+                <th class="typography__heading">Uses</th>
+              </tr>
+              <tr>
+                <td class="typography__text typography__text--dark typography__font--roboto-slab">
+                  'Roboto Slab', serif
+                </td>
+                <td class="typography__text typography__text--dark typography__font--roboto-slab">
+                  Headings (h1 to h6), CTA button text
+                </td>
+              </tr>
+              <tr>
+                <td class="typography__text typography__text--dark typography__font--open-sans">
+                  'Open Sans', sans-serif
+                </td>
+                <td class="typography__text typography__text--dark typography__font--open-sans">
+                  body, paragraph, captions, table content, div content, list item
+                </td>
+              </tr>
+            </table>
+          
+            <!-- Utility classes implementation -->
+            <h2 class="typography__title typography__title--level2">Utility classes implementation</h2>
+            <table class="typography__table typography__table--accent-blue">
+              <tr>
+                <th class="typography__heading">Elements</th>
+                <th class="typography__heading">Utility classes</th>
+              </tr>
+              <tr>
+                <td class="typography__font--roboto-slab typography__text--capitalize typography__text--weight800 typography__text--spacing-high">
+                  H1
+                </td>
+          
+                <td class="typography__font--roboto-slab typography__text--capitalize typography__text--weight800 typography__text--spacing-high">
+                  .typography__font--roboto-slab, .typography__text--capitalize, .typography__text--weight800, .typography__text--spacing-high
+                </td>
+              </tr>
+              <tr>
+                <td class="typography__font--roboto-slab typography__text--weight600 typography__text--light typography__text--capitalize">
+                  H2
+                </td>
+          
+                <td class="typography__font--roboto-slab typography__text--weight600 typography__text--light typography__text--capitalize">
+                  .typography__font--roboto-slab, .typography__text--weight600, .typography__text--light, .typography__text--capitalize
+                </td>
+              </tr>
+              
+            </table>
+          </section>
+          
 
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    u-font-family__poppins-serif, u-capitalize, u-font-size__800, u-ls__high
-                </td>
-            </tr>
-            <tr>
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    H2
-                </td>
-
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    u-font-family__poppins-serif, u-font-size__700, u-text--light, u-capitalize
-                </td>
-            </tr>
-            <tr>
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    H3
-                </td>
-
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    u-font-family__poppins-serif, u-font-size__400, u-text--light, u-text--light,
-                    u-capitalize
-                </td>
-            </tr>
-            <tr>
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    H4
-                </td>
-
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    u-font-family__poppins-serif, u-font-size__400, u-text--light, u-capitalize
-                </td>
-            </tr>
-            <tr>
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    H5
-                </td>
-
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    u-font-family__poppins-serif, u-font-size__300, u-text--mid, u-capitalize
-                </td>
-            </tr>
-
-            <tr>
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    P, Body, div
-                </td>
-
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    u-font-family__lato-serif, u-font-size__300, u-text--light, u-lh__low, u-fw__mid
-                </td>
-            </tr>
-            <tr>
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    Caption
-                </td>
-
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    u-font-family__poppins-serif, u-ls__high, u-font-size__300, u-text--mid, u-lh__low,
-                    u-fw__mid
-                </td>
-            </tr>
-            <tr>
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    Button text
-                </td>
-
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    u-font-family__lato-serif, u-font-size__700, u-text--mid
-                </td>
-            </tr>
-            <tr>
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    Link text
-                </td>
-
-                <td class="u-text--light u-font-size__700 u-font-family__poppins-serif">
-                    u-font-family__lato-serif, u-font-size__300, u-text--light
-                </td>
-            </tr>
-        </table>
     </main>
 </body>
 
