@@ -1,0 +1,457 @@
+/* Mobile-First Styles */
+body {
+    background-color: #DFE6DA;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.header .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.header .nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Hide menu by default */
+    flex-direction: column;
+}
+
+.header .nav__item {
+    margin-bottom: 10px;
+}
+
+.header .nav__link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Logo */
+.logo img {
+    display: block;
+    margin: 8px;
+    width: 30px;
+    /* Adjust as per your logo's size */
+}
+
+/* Hamburger Icon */
+.header .hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 75vh;
+}
+
+.hero__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 5rem;
+}
+
+/* Features Section Styles */
+.features {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.feature {
+    background-color: #CBD5C0;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature__title {
+    color: #333;
+    font-size: 20px;
+}
+
+.seasonal__description {
+    color: #251b1a;
+    font-size: 16px;
+    margin: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.About-us img {
+    width: 100%
+}
+
+.Story__title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.Team__title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+
+.feature__button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.About-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.Our-story {
+    background-color: #CBD5C0;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Adjust the width as needed */
+}
+
+.Our-team {
+    background-color: #CBD5C0;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Adjust the width as needed */
+}
+
+.feature__description {
+    color: #333;
+    font-size: 16px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.feature__button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    float: inline-end;
+    margin: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .wrapper-width {
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    .About-us {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10%;
+    }
+
+
+    .Our-story .Our-team {
+        width: 45%;
+        gap: 10px;
+    }
+
+
+.projects__container img {
+    width: 330px;
+    height: 330px
+}
+}
+
+.projects__container img {
+    width: 330px;
+    height: 330px
+}
+
+
+/* Running Text Animation */
+@keyframes running-text {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.projects__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 4%;
+    text-align: center;
+}
+
+.project {
+    width: calc(33.333% - 10px);
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 10px;
+}
+
+.project__image {
+    width: 100%;
+    height: auto;
+}
+
+.project__title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.project__description {
+    font-size: 16px;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination__button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.textarea-code {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    margin-left: 12rem;
+}
+
+/* Planting Guide Styles */
+.planting-guide {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.planting-guide__step {
+    margin-bottom: 20px;
+}
+
+.planting-guide__title {
+    font-size: 20px;
+}
+
+.planting-guide__description {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Certification Form Styles */
+.certification {
+    padding: 20px;
+}
+
+.form__group {
+    margin-bottom: 15px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form__submit {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Blog Section Styles */
+.blog {
+    padding: 20px;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+}
+
+.blog-post__title {
+    font-size: 20px;
+}
+
+.blog-post__excerpt {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.blog-post__button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 20px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    border-left: 5px solid #333;
+    padding-left: 10px;
+}
+
+.testimonial__quote {
+    font-size: 16px;
+}
+
+.testimonial__author {
+    font-size: 14px;
+    text-align: right;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info__name,
+.contact-info__address,
+.contact-info__email {
+    margin: 5px 0;
+}
+
+/* Social Media Styles */
+.social-media {
+    margin-bottom: 20px;
+}
+
+#container_02 {
+    display: none;
+}
+
+/* Desktop and Tablet Styles */
+@media (min-width: 1024px) {
+    .header .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header .nav__list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header .nav__item {
+        margin: 0 10px;
+    }
+
+    .header .logo {
+        margin: 0;
+    }
+
+    .header .hamburger {
+        display: none;
+    }
+
+    .features {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .planting-guide {
+        flex-direction: row;
+    }
+
+    .planting-guide__step {
+        width: 50%;
+    }
+
+    .blog {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .blog-post {
+        width: calc(50% - 10px);
+    }
+
+    .testimonials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .testimonial {
+        width: calc(50% - 10px);
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-info,
+    .social-media {
+        width: 50%;
+    }
+}
