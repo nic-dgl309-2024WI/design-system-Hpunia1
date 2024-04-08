@@ -1,55 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outback Nursery</title>
+    <title>Design System Home</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="main.js"></script>
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="coming-soon.html" class="nav__link">Product List</a></li>
-                <li class="nav__item"><a href="coming-soon.html" class="nav__link">Resources</a></li>
-                <li class="nav__item"><a href="coming-soon.html" class="nav__link">Annett's Favourite</a></li>
-                <li class="nav__item"><a href="coming-soon.html" class="nav__link">About us</a></li>
-                <li class="nav__item"><a href="coming-soon.html" class="nav__link">Contact</a></li>
+    <link rel="stylesheet" href="main.css">
+    <link rel="coming-soon" href="coming-soon.html">
+    <script src="main.js"></script>
 
+
+    <link rel="stylesheet" href="design-system.css">
+    <script src="design-system.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header wrapper-width">
+        <section class="logo">
+            <img src="images/logo.jpeg" alt="Logo">
+        </section>
+        <!-- Main Navigation -->
+        <nav id="nav" class="nav is-show">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Product List</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Reviews</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Annett's Fav</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
             </ul>
+
         </nav>
+        <!-- Hamburger mobile menu -->
+        <i class="fa fa-bars " id="hamburger" aria-hidden="true" onclick="toggleHomeMenuClick()"></i>
+        <i class="fa fa-times is-show" id="close" aria-hidden="true" onclick="toggleHomeMenuClick()"></i>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1 class="hero__title">Welcome to Outback Nursery</h1>
-        <img src="images/Hero_Image.jpeg" alt="Hero_Image"> 
-        <p class="hero__description">"Where little seeds grow into mighty Trees for tomorrow"</p>
-        <a href="#" class="hero__cta">Shop Now</a>
-    </section>
+    <!-- Main Content Area -->
+    <main class="main">
+        <!-- Hero Section with Tagline -->
+        <section class="hero">
+            <img src="images/Hero_Image.jpeg" alt="Hero Image">
+            <h1 class="hero__title">Where little seeds grow into mighty Trees for Tomorrow</h1>
+        </section>
 
-    <!-- Notice Section -->
-    <section class="notice">
-        <h3>Seasonal Closure Notice</h3>
-    </section>
+        <!-- Features Section -->
+        <section class="features ">
+            <!-- Individual Feature - Seasonal Closure -->
+            <article class="feature">
+                <p class="seasonal__description">We are currently closed for the season. Please check back for our
+                    opening date!</p>
+            </article>
 
-    <!-- Featured Products -->
-    <section class="featured">
-        <h2 class="featured__title">Featured Plants</h2>
-        <!-- Example product; replicate as needed -->
-        <div class="product">
-            <img src="path/to/optimized/image.jpg" alt="Product Name" class="product__image" />
-            <h3 class="product__name">Plant Name</h3>
-            <p class="product__price">$XX.XX</p>
-        </div>
-    </section>
+            <div class="About-us wrapper-width">
+                <!-- Individual Feature - Our Story -->
+                <article class="Our-story">
+                    <h2 class="Story__title">Our Story</h2>
+                    <img src="./images/our_team.jpg" alt="">
+                    <p class="feature__description">Learn about our journey from a small family business to the nursery
+                        we are today.</p>
+                    <button class="feature__button">Read more</button>
+                </article>
 
-    <!-- Footer -->
+                <!-- Individual Feature - Our Team -->
+                <article class="Our-team wrapper-width">
+                    <h2 class="Team__title">Our Team</h2>
+                    <img src="./images/our_story.jpg" alt="">
+
+                    <p class="feature__description">Meet the passionate individuals behind Outback Nursery.</p>
+
+                    <button class="feature__button">Read more</button>
+                </article>
+            </div>
+
+
+            <!-- Individual Feature - Our Products -->
+            <section class="projects wrapper-width">
+                <div id="container_02" class="projects__container">
+                    <!-- Project 1 -->
+                    <article class="projectOne">
+                        <img src="images/Fruit_Trees.jpeg" alt="Project 1" class="project__image">
+                        <h3 class="project__title">Fruit Trees</h3>
+                        <p class="project__description">Description of project 1.</p>
+                    </article>
+                    <!-- Project 2 -->
+                    <article class="projectTwo">
+                        <img src="images/hedges.jpeg" alt="Project 2" class="project__image">
+                        <h3 class="project__title">Hedging</h3>
+                        <p class="project__description">Description of project 2.</p>
+                    </article>
+                    <!-- Project 3 -->
+                    <article class="projectThree">
+                        <img src="images/Japanese_maple.webp" alt="Project 3" class="project__image">
+                        <h3 class="project__title">Japanese maple</h3>
+                        <p class="project__description">Description of project 3.</p>
+                    </article>
+                </div>
+                <div id="container_01" class="projects__container">
+
+                    <!-- Project 4 -->
+                    <article class="projectFour">
+                        <img src="images/deciduous_shrubs.webp" alt="Project 4" class="project__image">
+                        <h3 class="project__title">Deciduous Shrubs</h3>
+                        <p class="project__description">Description of project 4.</p>
+                    </article>
+                    <!-- Project 5 -->
+                    <article class="projectFive">
+                        <img src="images/Ornamental_trees.jpeg" alt="Project 5" class="project__image">
+                        <h3 class="project__title">Ornamental trees</h3>
+                        <p class="project__description">Description of project 5.</p>
+                    </article>
+                    <!-- Project 6 -->
+                    <article class="projectSix">
+                        <img src="images/conifer.jpeg" alt="Project 6" class="project__image">
+                        <h3 class="project__title">Conifers</h3>
+                        <p class="project__description">Description of project 6.</p>
+                    </article>
+                </div>
+                <div class="pagination">
+                    <button class="pagination__button" onclick="previousPage()">Previous</button>
+                    <button class="pagination__button" onclick="nextPage()">Next</button>
+                </div>
+            </section>
+
+
+            <!-- Planting Guide Section -->
+            <section class="planting-guide">
+                <!-- Planting Guide - Before Planting -->
+                <div class="planting-guide__step">
+                    <h2 class="planting-guide__title">Before Planting</h2>
+                    <p class="planting-guide__description">Everything you need to do to prepare your garden for new
+                        plants.</p>
+                </div>
+
+                <!-- Planting Guide - Planting -->
+                <div class="planting-guide__step">
+                    <h2 class="planting-guide__title">Planting</h2>
+                    <p class="planting-guide__description">Follow our step-by-step guide to ensure your plants thrive.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Certification Form Section -->
+            <section class="certification">
+                <!-- Contact Form -->
+                <form class="form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Name:</label>
+                        <input type="text" id="name" class="form__input" name="name">
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email:</label>
+                        <input type="email" id="email" class="form__input" name="email">
+                    </div>
+                    <div class="form__group">
+                        <label for="message" class="form__label">Message:</label>
+                        <textarea id="message" class="form__textarea" name="message"></textarea>
+                    </div>
+                    <div class="form__group">
+                        <button type="submit" class="form__submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Blog Section -->
+            <section class="blog">
+                <!-- Blog Post #1 -->
+                <article class="blog-post#1">
+                    <h2 class="blog-post__title">Blog Title #1</h2>
+                    <p class="blog-post__excerpt">A quick preview of the blog content...</p>
+                    
+                </article>
+                <!-- Blog Post #2 -->
+                <article class="blog-post#2">
+                    <h2 class="blog-post__title">Blog Title #2</h2>
+                    <p class="blog-post__excerpt">A quick preview of the blog content...</p>
+                    
+                </article>
+                <button class="blog-post__button">Read more</button>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="testimonials">
+                <!-- Testimonial #1 -->
+                <blockquote class="testimonial">
+                    <p class="testimonial__quote">"I've never been disappointed with Outback's selection and quality of
+                        plants!"</p>
+                    <footer class="testimonial__author">— Jane Doe</footer>
+                </blockquote>
+                
+                    <!-- Testimonial #2 -->
+                    <blockquote class="testimonial2">
+                        <p class="testimonial__quote">"I've never been disappointed with Outback's selection and quality of
+                            plants!"</p>
+                        <footer class="testimonial__author">— James Marshal</footer>
+                    </blockquote>
+                
+            </section>
+    </main>
+
+    <!-- Footer Section -->
     <footer class="footer">
-        <p class="footer__text">© 2024 Outback Nursery. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+        <!-- Contact Information -->
+        <section class="contact-info">
+            <p class="contact-info__name">Outback Nursery</p>
+            <address class="contact-info__address">
+                6016 Headquarters Rd, Courtenay, BC, V9J 1M7
+            </address>
+            <p class="contact-info__email">info@outbacknursery.ca</p>
+        </section>
 
+        <!-- Social Media Links -->
+        <section class="social-media">
+            <!-- Social media links would be added here... -->
+        </section>
+
+        <!-- Copyright Notice -->
+        <div class="footer__copyright">
+            <p>&copy; 2024 Outback Nursery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

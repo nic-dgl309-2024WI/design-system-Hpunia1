@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="design-system.css">
+    <script src="design-system.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font family-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header class="l-header">
+        <!-- Top Navbar -->
+
+        <nav class="l-header__nav">
+            <h1 href="index.html" class="u-fs__700 u-font-family__roboto u-uppercase">Design System</h1>
+            <div id="topbar" class="topbar is-show">
+                <a href="about-me.html">About Me</a>
+
+                <!-- Demo Site Link Placeholder -->
+
+                <a href="#" onclick="return false;">Demo Site</a>
+            </div>
+        </nav>
+        <!-- Hamburger mobile menu -->
+        <i class="fa fa-bars " id="hamburger" aria-hidden="true" onclick="toggleMenuClick()"></i>
+        <i class="fa fa-times is-show" id="close" aria-hidden="true" onclick="toggleMenuClick()"></i>
+    </header>
+    <main>
+
+        <!-- Side Navbar -->
+
+        <aside class="sidebar">
+
+
+            <nav id="sidebar" class="l-sidebar__nav is-show">
+                <ul class="c-sidebar__list">
+                    <li class="c-sidebar__list--item u-fw__bold">Branding
+                        <ul class="c-sidebar__sublist">
+                            <li class="c-sidebar__list--item"><a href="./colours.html">01 Colours</a></li>
+                            <li class="c-sidebar__list--item"><a href="./typography.html">02 Typography</a></li>
+                            <li class="c-sidebar__list--item"><a href="#logo">03 Logo</a></li>
+                        </ul>
+                    </li>
+
+                    <ul class="c-sidebar__list">
+                        <li class="c-sidebar__list--item"><a href="./spacing.html">04 Spacing</a></li>
+                        <li class="c-sidebar__list--item"><a href="./container.html">05 Container</a></li>
+                        <li class="c-sidebar__list--item"><a href="#images">06 Images</a></li>
+                        <li class="c-sidebar__list--item"><a href="#interactive">07 Interactive</a></li>
+                        <li class="c-sidebar__list--item"><a href="#feedback">08 Feedback</a></li>
+                    </ul>
+                    </li>
+                    <li class="c-sidebar__list--title u-fw__bold">Navigation
+                        <ul class="c-sidebar__list">
+                            <li class="c-sidebar__list--item"><a href="#navbars">09 Navbars</a></li>
+                            <li class="c-sidebar__list--item"><a href="#breadcrumbs">10 Breadcrumbs</a></li>
+                            <li class="c-sidebar__list--item"><a href="#pagination">11 Pagination</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-sidebar__title u-fw__bold">Blocks
+                        <ul class="c-sidebar__list">
+                            <li class="c-sidebar__list--item"><a href="#hero">12 Hero</a></li>
+                            <li class="c-sidebar__list--item"><a href="#carousel">13 Carousel</a></li>
+                            <li class="c-sidebar__list--item"><a href="#slats">14 Slats</a></li>
+                            <li class="c-sidebar__list--item"><a href="#footer">15 Footer</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-sidebar__title u-fw__bold">Components
+                        <ul class="c-sidebar__list">
+                            <li class="c-sidebar__list--item"><a href="#cards">16 Cards</a></li>
+                            <li class="c-sidebar__list--item"><a href="#forms">17 Forms</a></li>
+                            <li class="c-sidebar__list--item"><a href="#accordion">18 Accordion</a></li>
+                            <li class="c-sidebar__list--item"><a href="#lists">19 Lists</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Conatiner section-->
+
+        <main class="main-content">
+            <div class="container-introduction text-secondary">
+                <h1 class="container-title text-primary font-large margin-y-2">Containers</h1>
+                <p class="container-description wide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci ante, feugiat quis hendrerit commodo, ultrices nec orci. Nam viverra vestibulum ex at scelerisque. Pellentesque fermentum lectus id auctor convallis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+            </div>
+        
+            <h2 class="flexbox-heading text-primary font-large margin-y-1-5">Flexbox</h2>
+            <p class="flexbox-intro wide-text text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci ante, feugiat quis hendrerit commodo, ultrices nec orci.</p>
+            <table class="flexbox-table body-text center-align margin-y-2">  
+                <thead class="flexbox-header bg-primary text-cta">
+                    <th class="flexbox-header-item">Property Name</th>
+                    <th class="flexbox-header-item">Value</th>
+                    <th class="flexbox-header-item">Class Name</th>
+                </thead>
+                <tbody class="flexbox-body">
+                    <!-- Flexbox rows go here, similar structure, updated class names -->
+                </tbody>
+            </table>
+        
+            <h2 class="grid-heading text-primary font-large margin-y-1-5">Grid</h2>
+            <p class="grid-intro wide-text text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci ante, feugiat quis hendrerit commodo, ultrices nec orci.</p>
+            <table class="grid-table body-text center-align margin-y-2">  
+                <thead class="grid-header bg-primary text-cta">
+                    <th class="grid-header-item">Property Name</th>
+                    <th class="grid-header-item">Value</th>
+                    <th class="grid-header-item">Class Name</th>
+                </thead>
+                <tbody class="grid-body">
+                    <!-- Grid rows go here, similar structure, updated class names -->
+                </tbody>
+            </table>
+              
+        </main>
+        
+        <section class="width-section">
+            <h2 class="width-heading text-primary font-large margin-y-1-5">Width</h2>
+            <table class="width-table body-text center-align margin-y-2">  
+                <thead class="width-header bg-primary text-cta">
+                    <th class="width-header-item">Class Name</th>
+                    <th class="width-header-item">Values</th>
+                </thead>
+                <tbody class="width-body">
+                    <!-- Width rows go here, similar structure, updated class names -->
+                </tbody>
+            </table>
+        </section>
+        
+        <section class="width-visuals">
+            <h2 class="visual-examples-heading text-primary font-large margin-y-1-5">Visual Examples</h2>
+            <div class="visual-example max-width-mobile bg-primary text-cta margin-bottom-1 caption">
+                <span>max-width for mobile view: 90%</span>
+            </div>
+        
+            <div class="visual-example full-width bg-primary text-cta margin-bottom-1 caption">
+                <span>full width: 100%</span>
+            </div>
+        
+            <div class="visual-example text-max-width bg-primary text-cta margin-bottom-1 caption">
+                <span>max-width for text: 70ch</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+        </section>
+        
+        <footer class="footer bg-primary">
+        </footer>
+    </main>
+</body>
+</html>
