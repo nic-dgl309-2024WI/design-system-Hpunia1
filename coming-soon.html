@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Design System Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="coming-soon" href="coming-soon.html">
+    <script src="main.js"></script>
+
+
+    <link rel="stylesheet" href="design-system.css">
+    <script src="design-system.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="coming-soon.html">About Us</a></li>
-                <li><a href="coming-soon.html">Services</a></li>
-                <li><a href="coming-soon.html">Contact</a></li>
+    <!-- Header Section -->
+    <header class="header wrapper-width">
+        <section class="logo">
+           <a  href="./index.html"> <img src="images/logo.jpeg" alt="Logo"></a>
+            <p> Outback Nursery</p>
+        </section>
+        <!-- Main Navigation -->
+        <nav id="nav" class="nav is-show">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="coming-soon.html" class="nav__link">Product List</a></li>
+                <li class="nav__item"><a href="coming-soon.html" class="nav__link">Reviews</a></li>
+                <li class="nav__item"><a href="coming-soon.html" class="nav__link">Annett's Fav</a></li>
+                <li class="nav__item"><a href="coming-soon.html" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="coming-soon.html" class="nav__link">Contact</a></li>
             </ul>
+
         </nav>
+        <!-- Hamburger mobile menu -->
+        <i class="fa fa-bars " id="hamburger" aria-hidden="true" onclick="toggleHomeMenuClick()"></i>
+        <i class="fa fa-times is-show" id="close" aria-hidden="true" onclick="toggleHomeMenuClick()"></i>
+    </header>
         <h1>Coming Soon</h1>
     </header>
 </body>
