@@ -1,12 +1,12 @@
-/* Mobile-First Styles */
-body {
+ /* Mobile-First Styles */
+ body {
     background-color: #DFE6DA;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Header Styles */
+ Header Styles 
 .header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -25,7 +25,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    /* Hide menu by default */
+    
     flex-direction: column;
 }
 
@@ -39,15 +39,16 @@ body {
     font-size: 16px;
 }
 
-/* Logo */
+/* Logo*/
 .logo img {
     display: block;
-    margin: 8px;
-    width: 30px;
+    margin: 10px;
+    width: 40px;
+    cursor: pointer;
     /* Adjust as per your logo's size */
 }
 
-/* Hamburger Icon */
+/* Hamburger Icon*/ 
 .header .hamburger {
     display: block;
     cursor: pointer;
@@ -74,7 +75,7 @@ body {
     font-size: 5rem;
 }
 
-/* Features Section Styles */
+/* Features Section Styles*/ 
 .features {
     display: flex;
     flex-direction: column;
@@ -264,100 +265,253 @@ body {
 }
 
 /* Planting Guide Styles */
-.planting-guide {
-    display: flex;
-    flex-direction: column;
+.planting-instructions-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #CBD5C0;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.planting-guide__step {
+
+.planting-instructions {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.planting-instructions th, .planting-instructions td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.planting-instructions th {
+    background-color: #f4f4f4;
+}
+
+.read-more {
+    display: block;
+    width: max-content;
+    padding: 10px 20px;
+    background-color: #45a049;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.read-more:hover {
+    background-color: #3a8a37;
+}
+
+
+/* Certification Form Styles */
+.gift-container {
+    background-color: #CBD5C0;
+    width: 80%;
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.gift-container h1, .gift-container p {
+    color: #333;
+    text-align: center;
+}
+
+.instructions {
+    list-style-type: decimal;
+    margin: 20px;
+    padding-left: 20px;
+}
+
+.form-step {
     margin-bottom: 20px;
 }
 
-.planting-guide__title {
-    font-size: 20px;
-}
-
-.planting-guide__description {
-    font-size: 16px;
-    margin: 10px 0;
-}
-
-/* Certification Form Styles */
-.certification {
-    padding: 20px;
-}
-
-.form__group {
-    margin-bottom: 15px;
-}
-
-.form__label {
+label {
     display: block;
     margin-bottom: 5px;
+    color: #555;
 }
 
-.form__input,
-.form__textarea {
+input[type="email"], input[type="number"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
-.form__submit {
-    background-color: #333;
-    color: #fff;
+.submit  {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    padding: 10px 20px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+button:hover {
+    background-color: #45a049;
 }
 
 /* Blog Section Styles */
-.blog {
+.blog-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
     padding: 20px;
 }
 
 .blog-post {
+    flex: 1;
+    background-color: #cbd5c0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.blog-post img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Circular image */
     margin-bottom: 20px;
 }
 
-.blog-post__title {
-    font-size: 20px;
+
+.blog-post h2 {
+    color: #333;
+    font-size: 24px;
 }
 
-.blog-post__excerpt {
+.blog-post p {
+    color: #666;
     font-size: 16px;
-    margin: 10px 0;
+    line-height: 1.5;
 }
 
-.blog-post__button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+.read-more {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
+
+.read-more:hover {
+    background-color: #4CAF50;
+}
+
 
 /* Testimonials Section Styles */
-.testimonials {
-    padding: 20px;
+.testimonial-carousel {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.testimonial-container {
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
 .testimonial {
+    min-width: 100%; /* Ensure each testimonial takes full container width */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    display: none; /* Hide testimonials initially */
+}
+
+.testimonial.active {
+    display: block; /* Show only active testimonial */
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Circular image */
     margin-bottom: 20px;
-    border-left: 5px solid #333;
-    padding-left: 10px;
 }
 
-.testimonial__quote {
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ddd;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.arrow:hover {
+    background-color: #ccc;
+}
+
+/* Our Location */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #CBD5C0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.map iframe {
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border: none;
+}
+
+.info {
+    flex: 1;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    max-width: 400px;
+}
+
+.info h2 {
+    margin-top: 0;
+}
+
+.info p {
     font-size: 16px;
+    line-height: 1.5;
 }
 
-.testimonial__author {
-    font-size: 14px;
-    text-align: right;
-}
 
 /* Footer Styles */
 .footer {
@@ -445,13 +599,85 @@ body {
         width: calc(50% - 10px);
     }
 
-    .footer {
+    /* Footer Section*/
+    .site-footer {
+        background-color: black;
+        color: white;
+        padding: 20px 0;
+    }
+    
+    .footer-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
     }
-
-    .contact-info,
-    .social-media {
-        width: 50%;
+    
+    .footer-logo img {
+        width: 100px; /* Adjust size as needed */
     }
+    
+    .footer-nav {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-nav li {
+        padding: 10px 0;
+    }
+    
+    .footer-nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    .get-in-touch input[type="email"] {
+        padding: 10px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .get-in-touch button {
+        background-color: #45a049;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .get-in-touch button:hover {
+        background-color: #369a36;
+    }
+    
+    .follow-us a {
+        margin-right: 10px;
+    }
+    
+    .follow-us img {
+        width: 30px; /* Adjust size as needed */
+    }
+    
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .get-in-touch, .follow-us {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .get-in-touch input[type="email"], .get-in-touch button {
+            width: 90%;
+            margin-top: 10px;
+        }
+    }
+    
 }

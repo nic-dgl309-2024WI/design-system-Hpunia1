@@ -36,7 +36,7 @@ function previousPage() {
 
 function nextPage () {
     let currentElement = document.getElementById('container_01');
-    let pastElement = document.getElementById(`container_02`);
+    let pastElement = document.getElementById(`container_02 `);
 
     pastElement.style.display = "none";
     currentElement.style.display = "flex";
@@ -45,3 +45,31 @@ function nextPage () {
 
 // Initialize the first page
 showProjects(currentPage);
+
+// Testimonial Section
+
+document.addEventListener('DOMContentLoaded', function() {
+    const testimonials = document.querySelectorAll('.testimonial');
+    let currentIndex = 0;
+
+    function showTestimonial(index) {
+        testimonials.forEach((testimonial, idx) => {
+            testimonial.classList.remove('active');
+        });
+        testimonials[index].classList.add('active');
+    }
+
+    document.querySelector('.left-arrow').addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+        showTestimonial(currentIndex);
+    });
+
+    document.querySelector('.right-arrow').addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        showTestimonial(currentIndex);
+    });
+
+    showTestimonial(currentIndex); // Initially show the first testimonial
+});
+
+
