@@ -1,38 +1,70 @@
+/* General body styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #CBD5C0; /* Light green background */
+}
 
+/* Header styles */
+.l-header {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
 
-@media only screen and (min-width: 1200px) {
-  #hamburger,
-  #close {
-    display: none !important;
-  }
+}
 
-  .is-show {
-    display: block !important;
-  }
+.l-header__nav h1 {
+  margin: 0;
+  font-size: 24px;
+}
 
-  .topbar {
-    display: flex;
-  }
+.topbar {
+  display: flex;
+  gap: 10px;
+}
 
-  .l-header__nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
+/* Sidebar styles */
+.sidebar {
+  width: 250px; /* Adjust the width as needed */
+  background-color: #ffffff; /* White background for contrast */
+  padding: 20px;
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Enable scrolling if content is too long */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
-  /* mouse over link */
+/* Main content area */
+.main-content {
+  margin-left: 270px; /* Make margin left equal to the sidebar width plus some gap */
+  padding: 20px;
+  background-color: #f0f0f0; /* Light grey background for the content area */
+}
+
+/* Link styles */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
 a:hover {
   color: #ff0000;
 }
 
+/* Table styles for typography etc. */
 .typography-table {
   width: 100%;
-  border: 2px solid;
-  margin-top: 20px;
+  border-collapse: collapse;
 }
 
-th,
-td {
+th, td {
   text-align: left;
   padding: 8px;
   border: 2px solid #171717; /* Light grey border for separation */
@@ -43,10 +75,47 @@ th {
 }
 
 /* Zebra striping for rows */
-tr{
+tr:nth-child(odd){
   background-color: #9cba87;
 }
 
+/* Responsiveness */
+@media only screen and (min-width: 1200px) {
+  #hamburger, #close {
+      display: none !important;
+  }
 
+  .is-show {
+      display: block !important;
+  }
 
+  .topbar {
+      display: flex;
+  }
+
+  .l-header__nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .sidebar {
+      width: 100%;
+      position: static;
+      height: auto;
+  }
+
+  .main-content {
+      margin-left: 0;
+  }
+
+  .fa-bars, .fa-times {
+      display: inline-block !important;
+  }
+
+  .topbar, .l-header__nav {
+      display: block;
+  }
 }
