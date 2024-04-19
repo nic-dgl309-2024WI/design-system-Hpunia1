@@ -21,16 +21,17 @@
     <!-- Header Section -->
     <header class="header wrapper-width">
         <section class="logo">
-            <img src="images/logo.jpeg" alt="Logo">
+            <a  href="./index.html"> <img src="images/logo.jpeg" alt="Logo"></a>
+            <p> Outback Nursery</p>
         </section>
         <!-- Main Navigation -->
         <nav id="nav" class="nav is-show">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Product List</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Reviews</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Annett's Fav</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                <li class="nav__item"><a href="coming-soon.html" class="nav__link">Product List</a></li>
+                <li class="nav__item"><a href="coming-soon.html" class="nav__link">Reviews</a></li>
+                <li class="nav__item"><a href="coming-soon.html" class="nav__link">Annett's Fav</a></li>
+                <li class="nav__item"><a href="coming-soon.html" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="coming-soon.html" class="nav__link">Contact</a></li>
             </ul>
 
         </nav>
@@ -75,6 +76,8 @@
                     <button class="feature__button">Read more</button>
                 </article>
             </div>
+        </section>
+            
 
 
             <!-- Individual Feature - Our Products -->
@@ -128,96 +131,165 @@
 
 
             <!-- Planting Guide Section -->
-            <section class="planting-guide">
-                <!-- Planting Guide - Before Planting -->
-                <div class="planting-guide__step">
-                    <h2 class="planting-guide__title">Before Planting</h2>
-                    <p class="planting-guide__description">Everything you need to do to prepare your garden for new
-                        plants.</p>
-                </div>
+            <div class="planting-instructions-container">
+                <table class="planting-instructions">
+                    <thead>
+                        <tr>
+                            <th>Before Planting</th>
+                            <th>After Planting</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Test the soil to adjust pH levels and nutrient content.</td>
+                            <td>Water the plants deeply to help establish roots.</td>
+                        </tr>
+                        <tr>
+                            <td>Choose the right season for planting specific plants.</td>
+                            <td>Add mulch to conserve moisture and suppress weeds.</td>
+                        </tr>
+                        <tr>
+                            <td>Prepare the planting area by clearing weeds and debris.</td>
+                            <td>Monitor for pests and diseases regularly.</td>
+                        </tr>
+                        <tr>
+                            <td>Amend the soil with compost or organic matter.</td>
+                            <td>Prune any damaged or diseased branches to promote growth.</td>
+                        </tr>
+                        <tr>
+                            <td>Ensure proper spacing between plants to avoid overcrowding.</td>
+                            <td>Apply fertilizer according to the specific needs of the plants.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="link_to_full_guide.html" class="read-more">Read More</a>
+            </div>
 
-                <!-- Planting Guide - Planting -->
-                <div class="planting-guide__step">
-                    <h2 class="planting-guide__title">Planting</h2>
-                    <p class="planting-guide__description">Follow our step-by-step guide to ensure your plants thrive.
-                    </p>
-                </div>
-            </section>
 
             <!-- Certification Form Section -->
-            <section class="certification">
-                <!-- Contact Form -->
-                <form class="form">
-                    <div class="form__group">
-                        <label for="name" class="form__label">Name:</label>
-                        <input type="text" id="name" class="form__input" name="name">
+            <div class="gift-container">
+                <h1>Purchase a Gift Certificate</h1>
+                <p>Get your gift certificates in just three easy steps:</p>
+                <ol class="instructions">
+                    <li>Introduce yourself by sending an email.</li>
+                    <li>Send an E-transfer with your chosen amount.</li>
+                    <li>We will scan a voucher and email it back to you or to another email of your choosing.</li>
+                </ol>
+                <form action="submit_form_endpoint" method="post">
+                    <div class="form-step">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required
+                            placeholder="Enter your email to introduce yourself">
                     </div>
-                    <div class="form__group">
-                        <label for="email" class="form__label">Email:</label>
-                        <input type="email" id="email" class="form__input" name="email">
+                    <div class="form-step">
+                        <label for="amount">Gift Certificate Amount ($ CAD):</label>
+                        <input type="number" id="amount" name="amount" required
+                            placeholder="Enter amount in CAD for E-transfer">
                     </div>
-                    <div class="form__group">
-                        <label for="message" class="form__label">Message:</label>
-                        <textarea id="message" class="form__textarea" name="message"></textarea>
+                    <div class="form-step">
+                        <label for="recipient-email">Recipient's Email (optional):</label>
+                        <input type="email" id="recipient-email" name="recipient-email"
+                            placeholder="Enter recipient's email (if different from yours)">
                     </div>
-                    <div class="form__group">
-                        <button type="submit" class="form__submit">Submit</button>
-                    </div>
+                    <button class="submit">Submit</button>
                 </form>
-            </section>
+            </div>
+
+
 
             <!-- Blog Section -->
-            <section class="blog">
-                <!-- Blog Post #1 -->
-                <article class="blog-post#1">
-                    <h2 class="blog-post__title">Blog Title #1</h2>
-                    <p class="blog-post__excerpt">A quick preview of the blog content...</p>
-                    
-                </article>
-                <!-- Blog Post #2 -->
-                <article class="blog-post#2">
-                    <h2 class="blog-post__title">Blog Title #2</h2>
-                    <p class="blog-post__excerpt">A quick preview of the blog content...</p>
-                    
-                </article>
-                <button class="blog-post__button">Read more</button>
-            </section>
+            <div class="blog-container">
+                <div class="blog-post">
+                    <img src="images/Women_Blog_1.webp" alt="Garden Tips">
+                    <h2>Top Gardening Tips for Beginners</h2>
+                    <p>Discover essential gardening techniques to enhance your green thumb. From soil preparation to
+                        watering schedules, learn how to start your gardening journey with confidence.</p>
+                    <a href="link_to_full_blog1.html" class="read-more">Read More</a>
+                </div>
+                <div class="blog-post">
+                    <img src="images/man_Blog_2.webp" alt="Sustainable Gardening">
+                    <h2>Sustainable Gardening Practices</h2>
+                    <p>Explore eco-friendly gardening practices that help sustain not only your garden but also the
+                        environment. Learn about composting, water conservation, and native plant gardening.</p>
+                    <a href="link_to_full_blog2.html" class="read-more">Read More</a>
+                </div>
+            </div>
+
 
             <!-- Testimonials Section -->
-            <section class="testimonials">
-                <!-- Testimonial #1 -->
-                <blockquote class="testimonial">
-                    <p class="testimonial__quote">"I've never been disappointed with Outback's selection and quality of
-                        plants!"</p>
-                    <footer class="testimonial__author">— Jane Doe</footer>
-                </blockquote>
-                
-                    <!-- Testimonial #2 -->
-                    <blockquote class="testimonial2">
-                        <p class="testimonial__quote">"I've never been disappointed with Outback's selection and quality of
-                            plants!"</p>
-                        <footer class="testimonial__author">— James Marshal</footer>
-                    </blockquote>
-                
-            </section>
+            <div class="testimonial-carousel">
+                <button class="arrow left-arrow">&laquo;</button>
+                <div class="testimonial-container">
+                    <div class="testimonial active">
+                        <img src="images/Test_man_1.avif" alt="John Doe">
+                        <p>"Great service and support. I highly recommend them!"</p>
+                        <h4>- John Doe</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="images/Test_man_2.jpeg" alt="Jane Smith">
+                        <p>"The team was very responsive and solved my issues quickly."</p>
+                        <h4>- Jane Smith</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="images/Woman_test_1.jpeg" alt="Emily Johnson">
+                        <p>"Absolutely amazing experience, will use them again!"</p>
+                        <h4>- Emily Johnson</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="images/Test_man_3.webp" alt="Mike Brown">
+                        <p>"Very professional and thorough with their approach."</p>
+                        <h4>- Mike Brown</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="images/Women_test_2.jpeg" alt="Sarah Wilson">
+                        <p>"Impressed by the quality and attention to detail."</p>
+                        <h4>- Sarah Wilson</h4>
+                    </div>
+                </div>
+                <button class="arrow right-arrow">&raquo;</button>
+            </div>
+
+            <!--Our Location-->
+            <div class="contact-container">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82489.88549522041!2d-125.13324513790593!3d49.752038980485636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dc18bfe329%3A0xa080148546db78f5!2sOutback%20Nursery%20%26%20Garden%20Centre!5e0!3m2!1sen!2sca!4v1713246826181!5m2!1sen!2sca"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="info">
+                    <h2>Visit Us</h2>
+                    <p><strong>Address:</strong> Outback Nursery, 6016 Headquarters Rd., Courtenay, BC, CA V9J 1MJ</p>
+                    <p><strong>Email:</strong> info@outbacknursery.ca</p>
+                </div>
+            </div>
+
     </main>
 
     <!-- Footer Section -->
-    <footer class="footer">
-        <!-- Contact Information -->
-        <section class="contact-info">
-            <p class="contact-info__name">Outback Nursery</p>
-            <address class="contact-info__address">
-                6016 Headquarters Rd, Courtenay, BC, V9J 1M7
-            </address>
-            <p class="contact-info__email">info@outbacknursery.ca</p>
-        </section>
-
-        <!-- Social Media Links -->
-        <section class="social-media">
-            <!-- Social media links would be added here... -->
-        </section>
-
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.jpeg" alt="Logo">
+            </div>
+            <ul class="footer-nav">
+                <li class="nav__item"><a href="#" class="nav__link">Product List</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Reviews</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Annett's Fav</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="get-in-touch">
+                <h3>Get in Touch</h3>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+            <div class="follow-us">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com"><img src="images/fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com"><img src="images/Insta.webp" alt="Instagram"></a>
+            </div>
+        </div>
         <!-- Copyright Notice -->
         <div class="footer__copyright">
             <p>&copy; 2024 Outback Nursery. All rights reserved.</p>
